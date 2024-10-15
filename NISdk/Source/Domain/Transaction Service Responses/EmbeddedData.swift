@@ -19,10 +19,6 @@ public struct EmbeddedData {
     func getSelfLink() -> String? {
         return payment?.first?.paymentLinks?.paymentLink
     }
-    
-    func getAaniPayLink() -> String? {
-        return payment?.first?.paymentLinks?.aaniPaymentLink
-    }
 }
 
 extension EmbeddedData: Codable {
